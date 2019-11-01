@@ -1,8 +1,28 @@
+.app-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 40px;
   text-align: center;
 }
 
 .menu {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  height: 100px;
+  overflow: auto;
   border: 1px solid grey;
   padding: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: start;
 }

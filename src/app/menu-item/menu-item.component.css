@@ -1,0 +1,22 @@
+.menu-item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid grey;
+
+  padding: 0.25rem;
+  margin: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-item > .pizza-name {
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.menu-item > .pizza-price {
+  border: 1px solid grey;
+  text-align: right;
+}

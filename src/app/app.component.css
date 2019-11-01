@@ -1,9 +1,15 @@
 .app {
   width: 70%;
+  height: 100%;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .app > main {
+  flex: 1 1 auto;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,13 +18,16 @@
 .app > main > .menu {
   padding-right: 0.5rem;
   width: 75%;
+  height: 100%;
 }
 
 .app > main > .order {
   padding-left: 0.5rem;
   width: 25%;
+  height: 100%;
 }
 
 .app > footer {
+  flex: 0 1 40px;
   width: 100%;
 }
