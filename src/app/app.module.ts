@@ -6,6 +6,7 @@ import { MenuComponent } from './menu/menu.component';
 import { OrderComponent } from './order/order.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { PizzaModalComponent } from './pizza-modal/pizza-modal.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     OrderComponent,
     MenuItemComponent,
-    FooterComponent
+    FooterComponent,
+    PizzaModalComponent
   ],
   imports: [
     BrowserModule

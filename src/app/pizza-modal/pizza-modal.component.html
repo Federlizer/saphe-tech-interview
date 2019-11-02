@@ -1,0 +1,17 @@
+<div class="pizza-modal" (click)="handleClose()">
+  <div class="content" (click)="stopBubbling($event)">
+    <div class="content-header">
+      <h2>{{pizza.name}}</h2>
+    </div>
+
+    <div class="content-body">
+      <p>Some details about the pizza here. (TODO)</p>
+      <p>Price: {{pizza.price}} DKK</p>
+    </div>
+
+    <div class="content-buttons">
+      <button (click)="handleOrder()">Order</button>
+      <button (click)="handleClose()">Cancel</button>
+    </div>
+  </div>
+</div>

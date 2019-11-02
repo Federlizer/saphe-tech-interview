@@ -9,10 +9,12 @@ import { Pizza } from '../../models/Pizza';
 })
 export class MenuItemComponent implements OnInit {
   @Input() pizza: Pizza;
+  @Input() openModal: (id: number) => void;
 
-  constructor() { }
+  constructor() {}
+  ngOnInit() {}
 
-  ngOnInit() {
+  handleClick(e) {
+    this.openModal(this.pizza.id);
   }
-
 }
