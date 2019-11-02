@@ -1,7 +1,13 @@
 <div class="app">
   <main>
-    <app-menu class="menu"></app-menu>
-    <app-order class="order"></app-order>
+    <app-menu
+      class="menu"
+      [addToOrder]="addToOrder"
+    ></app-menu>
+    <app-order
+      class="order"
+      [orderList]="orderList"
+    ></app-order>
   </main>
 
   <footer>

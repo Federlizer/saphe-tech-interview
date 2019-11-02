@@ -4,12 +4,21 @@
   <div class="order">
 
     <div class="item-list">
+      <div class="item" *ngFor="let item of orderList">
+        <div class="name">
+          <strong>{{item.name}}</strong>
+        </div>
+
+        <div class="price">
+          {{item.price}} DKK
+        </div>
+      </div>
     </div>
 
     <div class="order-footer">
-      <div>Total: 200.00$</div>
+      <div>Total: {{totalPriceStr}}</div>
       <div>
-        <button>Order</button>
+        <button (click)="handleOrder()">Order</button>
       </div>
     </div>
 

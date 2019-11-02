@@ -31,6 +31,14 @@ h1 {
   overflow: auto;
 }
 
+.order > .item-list > .item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
 .order > .order-footer {
   flex-grow: 0;
   flex-shrink: 1;
