@@ -1,9 +1,12 @@
 .menu-item {
+  background-color: #FFFFFF;
   width: 200px;
   height: 200px;
-  border: 1px solid grey;
+  box-shadow:
+    0px 3px 1px -2px rgba(0,0,0,0.2),
+    0px 2px 2px 0px rgba(0,0,0,0.14),
+    0px 1px 5px 0px rgba(0,0,0,0.12);
 
-  padding: 0.25rem;
   margin: 0.5rem;
 
   display: flex;
@@ -11,14 +14,18 @@
   justify-content: space-between;
 
   cursor: pointer;
+  transition: box-shadow 0.2s;
 }
 
-.menu-item > .pizza-name {
-  border: 1px solid grey;
+.menu-item:hover {
+  box-shadow:
+    0px 3px 4px -2px rgba(0,0,0,0.2),
+    0px 2px 5px 0px rgba(0,0,0,0.14),
+    0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+
+.menu-item > div {
+  padding: 0.5rem 0;
   text-align: center;
-}
-
-.menu-item > .pizza-price {
-  border: 1px solid grey;
-  text-align: right;
+  background-color: rgba(0, 0, 0, 0.2);
 }
