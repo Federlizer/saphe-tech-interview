@@ -16,6 +16,7 @@ export class AppComponent {
 
     this.addToOrder = this.addToOrder.bind(this);
     this.handleSubmitOrder = this.handleSubmitOrder.bind(this);
+    this.handleRemoveOrderItem = this.handleRemoveOrderItem.bind(this);
   }
 
   addToOrder(pizza: Pizza) {
@@ -50,6 +51,10 @@ export class AppComponent {
     }
 
     this.orderList = orderList;
+  }
+
+  handleRemoveOrderItem(orderItemId: string) {
+    this.orderList = this.orderList.filter(oi => oi.id !== orderItemId);
   }
 
   handleSubmitOrder() {

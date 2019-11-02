@@ -19,6 +19,7 @@ import { currencyFormat } from '../../utils/currencyFormat';
 export class OrderComponent implements OnChanges {
   @Input() orderList: OrderItem[];
   @Input() onSubmitOrder: () => void;
+  @Input() onRemoveOrderItem: (orderItemId: string) => void;
   totalPriceStr: string = currencyFormat.format(0);
 
   ngOnChanges(changes: SimpleChanges) {

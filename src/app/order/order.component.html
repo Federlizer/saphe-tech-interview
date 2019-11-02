@@ -6,6 +6,7 @@
     <div class="item-list">
       <div class="item" *ngFor="let orderItem of orderList">
         <div class="name">
+          <span (click)="onRemoveOrderItem(orderItem.id)">X</span>
           <strong> {{orderItem.pizza.name}}</strong>
         </div>
 
