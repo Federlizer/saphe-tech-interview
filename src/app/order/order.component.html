@@ -4,13 +4,13 @@
   <div class="order">
 
     <div class="item-list">
-      <div class="item" *ngFor="let item of orderList">
+      <div class="item" *ngFor="let orderItem of orderList">
         <div class="name">
-          <strong>{{item.name}}</strong>
+          <strong> {{orderItem.pizza.name}}</strong>
         </div>
 
         <div class="price">
-          {{item.price}} DKK
+          {{orderItem.count}} x {{orderItem.pizza.price}} DKK
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
     <div class="order-footer">
       <div>Total: {{totalPriceStr}}</div>
       <div>
-        <button (click)="handleOrder()">Order</button>
+        <button (click)="onSubmitOrder()">Order</button>
       </div>
     </div>
 

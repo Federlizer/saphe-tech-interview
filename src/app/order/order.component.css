@@ -39,6 +39,11 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.order > .item-list > .item > .name > span {
+  color: red;
+  cursor: pointer;
+}
+
 .order > .order-footer {
   flex-grow: 0;
   flex-shrink: 1;
