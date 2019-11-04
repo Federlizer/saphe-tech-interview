@@ -16,12 +16,48 @@ export class MenuComponent {
   constructor() {
     this.modalPizza = null;
     this.pizzas = [
-      { id: 1, name: 'Margarita', price: 15.00 },
-      { id: 2, name: 'Peperoni', price: 15.50 },
-      { id: 3, name: 'Hawaian', price: 999.99 },
-      { id: 4, name: 'Formagi', price: 0.15 },
-      { id: 5, name: 'Margarita 2', price: 20.00 },
-      { id: 6, name: 'Margarita 3', price: 17.45 },
+      {
+        id: 1,
+        name: 'Margarita',
+        price: 15.00,
+        ingredients: 'Some ham, some cheese and some tomato sauce.',
+        pictureUri: 'https://spankysriverstreet.com/wp-content/uploads/2017/10/TYT-SRS_Pizza-small.jpg',
+      },
+      {
+        id: 2,
+        name: 'Peperoni',
+        price: 15.50,
+        ingredients: 'Some ham, some cheese and some tomato sauce.',
+        pictureUri: 'https://spankysriverstreet.com/wp-content/uploads/2017/10/TYT-SRS_Pizza-small.jpg',
+      },
+      {
+        id: 3,
+        name: 'Hawaian',
+        price: 999.99,
+        ingredients: 'Some ham, some cheese and some tomato sauce.',
+        pictureUri: 'https://spankysriverstreet.com/wp-content/uploads/2017/10/TYT-SRS_Pizza-small.jpg',
+      },
+      {
+        id: 4,
+        name: 'Formagi',
+        price: 0.15,
+        ingredients: 'Some ham, some cheese and some tomato sauce.',
+        pictureUri: 'https://spankysriverstreet.com/wp-content/uploads/2017/10/TYT-SRS_Pizza-small.jpg',
+      },
+      {
+        id: 5,
+        name: 'Margarita 2',
+        price: 20.00,
+        ingredients: 'Some ham, some cheese and some tomato sauce.',
+        pictureUri: 'https://spankysriverstreet.com/wp-content/uploads/2017/10/TYT-SRS_Pizza-small.jpg',
+      },
+      {
+        id: 6,
+        name: 'Margarita 3',
+        price: 17.45,
+        ingredients: 'Some ham, some cheese and some tomato sauce.',
+        pictureUri: 'https://spankysriverstreet.com/wp-content/uploads/2017/10/TYT-SRS_Pizza-small.jpg',
+      },
     ];
 
     this.openModal = this.openModal.bind(this);

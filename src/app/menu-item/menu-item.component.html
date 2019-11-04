@@ -1,4 +1,4 @@
-<div class="menu-item" (click)="handleClick($event)">
+<div [ngStyle]="backgroundImage()" class="menu-item" (click)="handleClick($event)">
   <div class="pizza-name">
     <span>{{pizza.name}}</span>
   </div>

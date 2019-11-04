@@ -20,4 +20,11 @@ export class MenuItemComponent implements OnInit {
   handleClick(e) {
     this.openModal(this.pizza.id);
   }
+
+  backgroundImage() {
+    return {
+      'background-image': `url(${this.pizza.pictureUri})`,
+      'background-size': '200px 200px',
+    };
+  }
 }
